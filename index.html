@@ -375,20 +375,20 @@
    
     <div id="wrapper-modal">
         <div id="overlay"></div>
-        <id id="modal-window">
+        <form action="/mail.php" method="POST" id="modal-window">
             <div class="modal__text">
                 Оставте свою заявку и мы свяжемся с Вами в ближайшее время!
             </div>
             <div class="modal__inputs ">
-               <p><label  class="input__modal" for="name">Ф.И.О:  </label><input  type="text"></p> 
-               <p ><label class="input__modal" for="number">Nmber:    </label><input></p> 
-               <p><label class="input__modal" for="email">E-mail:  </label><input  type="email"></p> 
+               <p><label  class="input__modal" for="">Ф.И.О:  </label><input name="user_name" placeholder="Иван Иванович" class="_error _name _req"  type="text"></p> 
+               <p ><label class="input__modal" for="">Nmber:    </label><input name="user_phone" placeholder="0701231234" class="_error _number _req" ></p> 
+               <p><label class="input__modal" for="">E-mail:  </label><input name="user_email" placeholder="ivan@gamail.com" class="_error _email _req"   type="email"></p> 
             </div>
             <div>
-                <button class="modal__btn-close" id="btn-close">ОТПРАВИТЬ</button>
+                <button type="submit" class="modal__btn-close" id="btn-close">ОТПРАВИТЬ</button>
             </div>
             
-        </div>
+        </form>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -398,5 +398,10 @@
     <script src="/js/slick.min.js "></script>
     <script src="/js/main.js"></script>
     <script src="/js/modal.js"></script>
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

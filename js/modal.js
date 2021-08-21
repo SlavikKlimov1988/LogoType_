@@ -42,3 +42,4 @@ modal.classList.remove('active');
 
 overlay.addEventListener('click', closeModal);
 btnClose.addEventListener('click', closeModal);
+
