@@ -376,9 +376,10 @@
   </footer> 
 
   <div id="modal">
-    <form>
-      <input type="text" placeholder="Ваше имя">
-      <input type="text" placeholder="Ваш телефон">
+    <form action="/mail.php" method="POST">
+      <input type="text" placeholder="Ваше имя" name="user_name">
+      <input type="text" placeholder="Ваш телефон" name="user_phone">
+      <input type="text" placeholder="Ваш E-mail" name="user_email">
       <input type="submit" value="Отправить">
     </form>
   </div>
